@@ -18,9 +18,9 @@ try {
   //Password:MAMP='root',XAMPP=''
   // 以下(1)(2)切り替え注意。最後２つの'',''はxamppのidとパスワード。idはroot、pwはなしでOKなので空欄
   // (1)ローカル開発時用！！
-  // $pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=localhost','root','');
+  $pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=localhost','root','');
   // (2)さくらサーバー用！！
-  $pdo = new PDO('mysql:dbname=gshycheese_gs_db;charset=utf8;host=mysql57.gshycheese.sakura.ne.jp','gshycheese','sirabasu0310');
+  // $pdo = new PDO('mysql:dbname=gshycheese_gs_db;charset=utf8;host=mysql57.gshycheese.sakura.ne.jp','gshycheese','sirabasu0310');
 
 } catch (PDOException $e) {
   // 失敗したときexit文章を出す。''内は任意の言葉
